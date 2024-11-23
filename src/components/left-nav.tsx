@@ -11,7 +11,7 @@ const LeftNav: FC<LeftNavProps> = ({ navs }) => {
     <nav className="w-64 h-screen">
       {navs.map((component, index) => (
         <div key={index}>
-          <p className="text-sm font-semibold text-gray-600 uppercase">
+          <p className="text-sm font-bold text-gray-600 uppercase">
             {component.label}
           </p>
           {component.components?.map((child, index) => (
